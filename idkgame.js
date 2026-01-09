@@ -80,7 +80,7 @@ function draw() {
 
 // Restart + control
 function keyPressed() {
-  if (keyCode === 32) {
+  if (keyCode === 76) {
     if (gameOver) {
       resetGame();
     } else {
