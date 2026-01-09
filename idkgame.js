@@ -90,7 +90,7 @@ function keyPressed() {
 }
 
 function keyReleased() {
-  if (keyCode === UP_ARROW) {
+  if (keyCode === 76) {
     player.fall();
   }
 }
