@@ -7,7 +7,7 @@ let gameOver = false;
 let t = 0;
 
 // Kill bar size
-const KILL_BAR_HEIGHT = 10;
+const KILL_BAR_HEIGHT = 5;
 
 function setup() {
   createCanvas(900, 900);
@@ -51,7 +51,7 @@ function draw() {
   }
 
   // Spawn obstacles
-  if (frameCount % 10 === 0) {
+  if (frameCount % 25 === 0) {
     obstacles.push(new Obstacle(r, g, b));
   }
 
@@ -80,7 +80,7 @@ function draw() {
 
 // Restart + control
 function keyPressed() {
-  if (keyCode === UP_ARROW) {
+  if (keyCode === 32) {
     if (gameOver) {
       resetGame();
     } else {
